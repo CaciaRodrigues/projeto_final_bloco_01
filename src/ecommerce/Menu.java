@@ -2,9 +2,27 @@ package ecommerce;
 
 import java.util.Scanner;
 
+import ecommerce.util.Cores;
+import ecommerce.model.Produto;
+import ecommerce.model.VelaComum;
+import ecommerce.model.VelaAromatica;
+import ecommerce.model.AromatizadorDeAmbiente;
+
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		// Teste da Classe VelaComum
+		VelaComum velaBranca = new VelaComum(1, 50.0f, 1, "Vela Branca Comum");
+		velaBranca.visualizar();
+		
+		// Teste da Classe VelaAromatica
+		VelaAromatica velaMorango = new VelaAromatica(2, 100.0f, 2, "Campo de Morango", "Morangos Silvestres");
+		velaMorango.visualizar();
+		
+		// Teste da Classe AromatizadorDeAmbiente
+		AromatizadorDeAmbiente aromaEucalipito = new AromatizadorDeAmbiente(3, 150.0f, 3, "Floresta de Eucalipto", "Eucalipto");
+		aromaEucalipito.visualizar();
 		
 		Scanner leitor = new Scanner(System.in);
 		
